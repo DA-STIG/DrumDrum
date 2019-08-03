@@ -80,7 +80,7 @@ function buttonAnimation(currentkey){
 
       setInterval(function(){
         activeButton.classList.remove("pressed");
-      },110);
+      },80);
 }
 
 
