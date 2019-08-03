@@ -3,7 +3,6 @@
 // .addEventListener("click",handleClick);
 
 
-
 // Detecting button pressed
   for (var i = 0; i < document.querySelectorAll("button.drum").length; i++) {
     // addEventListener("click",handleClick)[i]
@@ -26,6 +25,8 @@ document.addEventListener("keydown",function(event){
 function makeSound(key){
   switch (key) {
     case "w":
+       // creating a var that stores the sound obj+[location of the audio]
+        // ceates an Html el..a lot of methos with the obj including play.
     var tom1= new Audio('sounds/tom-1.mp3');
         tom1.play();
 
@@ -79,21 +80,7 @@ function buttonAnimation(currentkey){
 
       setInterval(function(){
         activeButton.classList.remove("pressed");
-      },10);
+      },50);
 }
 
 
-
-
-
-      // document.addEventListener("keydown", function(){
-      //   alert('keypressssssed ');
-      //
-      // })
-
-
-          // console.log(this.innerHTML);
-
-
-        // creating a var that stores the sound obj+[location of the audio]
-        // ceates an Html el..a lot of methos with the obj including play.
